@@ -1,0 +1,1 @@
+run `npm run lint1` for default, `npm run lint2` with the built-in stylish formatter and `npm run lint3` for custom formatting, 
