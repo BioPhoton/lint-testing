@@ -1,0 +1,36 @@
+{
+  "name": "lint-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "log-symbols": "^3.0.0",
+    "rxjs": "^6.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "custom-tslint-formatters": "^2.4.0",
+    "i": "^0.3.6",
+    "npm": "^6.10.3",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint1": "tslint --project tsconfig.json --config tslint.json ./index.ts",
+    "lint2": "tslint --project tsconfig.json --config tslint.json -t stylish ./index.ts",
+    "lint3": "npm run build && tslint --project tsconfig.json --config tslint.json -s ./formatters -t stylishRxJS ./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BioPhoton/lint-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BioPhoton/lint-testing/issues"
+  },
+  "homepage": "https://github.com/BioPhoton/lint-testing#readme"
+}

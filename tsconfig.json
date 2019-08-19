@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "es2015", "es2015.collection"
+    ],
+    "strict": true
+  },
+  "files": [
+    "index.ts",
+    "formatters/stylishRxJSFormatter.ts"
+  ],
+  "exclude": ["./node_modules/**/*"]
+}
